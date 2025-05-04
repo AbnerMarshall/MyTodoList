@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter var', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-gray-100; /* Slightly darker background */
+    min-height: 100vh;
+  }
+  /* Add some base styling for focus rings for accessibility */
+  *:focus-visible {
+      @apply outline-none ring-2 ring-offset-2 ring-primary-500;
+  }
+}
+
+/* Remove default browser margins */
+body, h1, h2, h3, p, ul, form {
+  margin: 0;
+}
+
+/* Remove old body/code rules */
+/*
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*/ 
