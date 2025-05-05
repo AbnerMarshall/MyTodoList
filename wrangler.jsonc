@@ -1,5 +1,0 @@
-{
-  "name": "todo", // Use the worker name Cloudflare expects
-  "compatibility_date": "2024-05-04", // Use a recent date
-  "pages_build_output_dir": "./dist" // Tells wrangler where the static files are
-}
